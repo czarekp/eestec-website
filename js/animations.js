@@ -4,8 +4,8 @@ $(window).on('beforeunload', function () {
 });
 
 $(document).ready(function () {
-    const navbar = $('nav');
-    const hamburger = $('nav button');
+    const navbar = $('header');
+    const hamburger = $('header button');
 
     //arrow buttons
     const arrowButtonToAboutUs = $('#move-to-about-us');
@@ -128,4 +128,11 @@ $(document).ready(function () {
             }
         });
     }, 300);
+
+    //invoking sliding down menu
+    hamburger.click(function () {
+        $('.site-menu').toggleClass('slide-down');
+        hamburger.toggleClass('fa-bars');
+        hamburger.toggleClass('fa-times');
+    });
 });
