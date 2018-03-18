@@ -21,15 +21,59 @@ nav {
     height: 56px;
     position: fixed;
     z-index: 10;
-    font-size: 3.5rem;
+}
+
+nav button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
     color: white;
+    position: fixed;
 }
 
 .fa-bars {
+    font-size: 3rem;
     position: absolute;
-    top: 12px;
-    right: 5%;
+    top: 4px;
+    right: 8px;
     z-index: 12;
+}
+
+.site-menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #bb2229;
+    background: black;
+    opacity: 0.8;
+    /*    transform: translateY(-100%);*/
+}
+
+.site-menu ul {
+    padding-top: 56px;
+    list-style-type: none;
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    width: 100%;
+}
+
+.site-menu li {
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.site-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 main section .arrow {

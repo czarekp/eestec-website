@@ -5,6 +5,7 @@ $(window).on('beforeunload', function () {
 
 $(document).ready(function () {
     const navbar = $('nav');
+    const hamburger = $('nav button');
 
     //arrow buttons
     const arrowButtonToAboutUs = $('#move-to-about-us');
@@ -112,11 +113,17 @@ $(document).ready(function () {
                     'background-color': 'rgb(255, 255, 255)',
                     'box-shadow': '0px 2px 8px 0px #552229'
                 });
+                hamburger.css({
+                    'color': '#ee2229'
+                });
             } else {
                 navbar.css({
                     'color': 'rgb(255, 255, 255)',
                     'background-color': 'transparent',
                     'box-shadow': '0px 2px 8px 0px transparent'
+                });
+                hamburger.css({
+                    'color': '#ffffff'
                 });
             }
         });
