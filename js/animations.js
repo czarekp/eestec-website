@@ -4,6 +4,7 @@ $(window).on('beforeunload', function () {
 });
 
 $(document).ready(function () {
+    //navigation
     const navbar = $('header');
     const hamburger = $('header button');
 
@@ -13,6 +14,13 @@ $(document).ready(function () {
     const arrowButtonToEuropeMap = $('#move-to-europe-map');
     const arrowButtonToJoinUs = $('#move-to-join-us');
     const arrowButtonToTop = $('#move-to-top');
+
+    //menu links
+    const welcomeLink = $('#welcome-link');
+    const aboutUsLink = $('#about-us-link');
+    const ourProjectsLink = $('#our-projects-link');
+    const europeMapLink = $('#europe-map-link');
+    const joinUsLink = $('#join-us-link');
 
     //animations for each section
     const welcomeAnimations = function () {
@@ -69,7 +77,6 @@ $(document).ready(function () {
     };
 
     const joinUsAnimations = function (event) {
-
         $('html, body').animate({
             scrollTop: $('#join-us').offset().top
         }, 1000);
@@ -94,6 +101,12 @@ $(document).ready(function () {
         }, 500);
     };
 
+    const menuAnimation = function () {
+        $('.site-menu').toggleClass('slide-down');
+        hamburger.toggleClass('fa-bars');
+        hamburger.toggleClass('fa-times');
+    };
+
     welcomeAnimations();
 
     //invoking animations for arrow buttons
@@ -102,6 +115,32 @@ $(document).ready(function () {
     arrowButtonToEuropeMap.click(europeMapAnimations);
     arrowButtonToJoinUs.click(joinUsAnimations);
     arrowButtonToTop.click(moveToTopAnimations);
+
+    //invoking animations for menu links
+    welcomeLink.click(function () {
+        menuAnimation();
+        moveToTopAnimations();
+    });
+
+    aboutUsLink.click(function () {
+        menuAnimation();
+        aboutUsAnimations();
+    });
+
+    ourProjectsLink.click(function () {
+        menuAnimation();
+        ourProjectsAnimations();
+    });
+
+    europeMapLink.click(function () {
+        menuAnimation();
+        europeMapAnimations();
+    });
+
+    joinUsLink.click(function () {
+        menuAnimation();
+        joinUsAnimations();
+    });
 
     //invoking events on scroll
     var updateWebsiteOnScroll = setInterval(function () {
@@ -130,9 +169,5 @@ $(document).ready(function () {
     }, 300);
 
     //invoking sliding down menu
-    hamburger.click(function () {
-        $('.site-menu').toggleClass('slide-down');
-        hamburger.toggleClass('fa-bars');
-        hamburger.toggleClass('fa-times');
-    });
+    hamburger.click(menuAnimation);
 });

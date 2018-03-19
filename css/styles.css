@@ -31,6 +31,7 @@ header button {
     color: white;
     position: fixed;
     z-index: 10;
+    outline: none;
 }
 
 .fa-bars,
