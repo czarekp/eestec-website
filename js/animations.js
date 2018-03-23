@@ -12,7 +12,7 @@ $(document).ready(function () {
     const arrowButtonToAboutUs = $('#move-to-about-us');
     const arrowButtonToOurProjects = $('#move-to-our-projects');
     const arrowButtonToEuropeMap = $('#move-to-europe-map');
-    const arrowButtonToJoinUs = $('#move-to-join-us');
+    const arrowButtonToJoinUs = $('#move-to-contact');
     const arrowButtonToTop = $('#move-to-top');
 
     //menu links
@@ -20,7 +20,7 @@ $(document).ready(function () {
     const aboutUsLink = $('#about-us-link');
     const ourProjectsLink = $('#our-projects-link');
     const europeMapLink = $('#europe-map-link');
-    const joinUsLink = $('#join-us-link');
+    const joinUsLink = $('#contact-link');
 
     //animations for each section
     const welcomeAnimations = function () {
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     const joinUsAnimations = function (event) {
         $('html, body').animate({
-            scrollTop: $('#join-us').offset().top
+            scrollTop: $('#contact').offset().top
         }, 1000);
 
 
