@@ -18,14 +18,14 @@ body {
 
 header {
     width: 100%;
-    height: 56px;
+    height: 5.6rem;
     position: fixed;
     z-index: 10;
 }
 
 header button {
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
     border: none;
     background: transparent;
     color: white;
@@ -38,8 +38,8 @@ header button {
 .fa-times {
     font-size: 3rem;
     position: absolute;
-    top: 4px;
-    right: 8px;
+    top: 0.4rem;
+    right: 0.8rem;
 }
 
 .site-menu {
@@ -57,7 +57,7 @@ header button {
 }
 
 .site-menu ul {
-    padding-top: 56px;
+    padding-top: 5.6rem;
     list-style-type: none;
     display: flex;
     height: 100vh;
@@ -75,7 +75,7 @@ header button {
 .site-menu a {
     text-decoration: none;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,9 +83,9 @@ header button {
 }
 
 main section .arrow {
-    width: 48px;
-    height: 48px;
-    border: 2px solid white;
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 0.2rem solid white;
     position: absolute;
     bottom: 3%;
     left: 50%;
@@ -94,7 +94,7 @@ main section .arrow {
     border-radius: 50%;
     font-size: 4rem;
     text-align: center;
-    text-shadow: 0px -12px, 0px -24px;
+    text-shadow: 0px -1.2rem, 0px -2.4rem;
     overflow: hidden;
     color: white;
 }
@@ -122,8 +122,8 @@ main > section {
 }
 
 main section:nth-child(2n) {
-    -webkit-box-shadow: 0px -2px 8px 0px #442229;
-    box-shadow: 0px -2px 8px 0px #442229;
+    -webkit-box-shadow: 0px -0.2rem 0.8rem 0px #442229;
+    box-shadow: 0px -0.2rem 0.8rem 0px #442229;
 }
 
 main section:nth-child(2n + 1) {
@@ -132,12 +132,12 @@ main section:nth-child(2n + 1) {
 }
 
 main section h2 {
-    padding-top: 72px;
+    padding-top: 7.2rem;
     text-transform: uppercase;
     text-align: center;
     font-weight: 300;
     position: relative;
-    padding-bottom: 16px;
+    padding-bottom: 1.6rem;
     font-size: 2.8rem;
 }
 
@@ -148,12 +148,12 @@ main section:nth-child(2n + 1) h2 {
 main section h2::after {
     content: "";
     display: block;
-    width: 50px;
-    height: 2px;
+    width: 5.0rem;
+    height: 0.2rem;
     background: #ee2229;
     position: absolute;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -2.5rem;
     bottom: 0;
 }
 
@@ -191,7 +191,7 @@ main section:nth-child(2n + 1) h2::after {
 }
 
 #welcome h1 {
-    margin-top: 8px;
+    margin-top: 0.8rem;
     font-size: 2.7rem;
     -webkit-transform: translateX(600%);
     transform: translateX(600%);
@@ -205,7 +205,6 @@ main section:nth-child(2n + 1) h2::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-top: 16px;
-    max-width: 720px;
     padding: 0 24px;
     text-align: justify;
     overflow: hidden;
@@ -215,7 +214,7 @@ main section:nth-child(2n + 1) h2::after {
     font-size: 1.5rem;
     font-weight: bold;
     color: #bb2229;
-    margin-bottom: 4px;
+    margin-bottom: 0.4rem;
 }
 
 #about-us article p {
@@ -223,9 +222,9 @@ main section:nth-child(2n + 1) h2::after {
 }
 
 #about-us article img {
-    height: 8vh;
+    height: 48px;
     display: block;
-    margin: 8px auto auto;
+    margin: 0.8rem auto auto;
 }
 
 #slider {
@@ -235,24 +234,23 @@ main section:nth-child(2n + 1) h2::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 16px;
+    margin-top: 1.6rem;
     height: 60vh;
 }
 
 #prev-btn,
 #next-btn {
-    width: 48px;
+    width: 4.8rem;
     background-color: transparent;
     border: 0;
     text-align: center;
     margin: auto 0;
-    cursor: pointer;
     outline: none;
 }
 
 .fa-angle-right,
 .fa-angle-left {
-    width: 48px;
+    width: 4.8rem;
     height: 100%;
     font-size: 6rem;
     color: white;
@@ -260,7 +258,7 @@ main section:nth-child(2n + 1) h2::after {
 
 #event {
     width: 100%;
-    border: 8px solid rgba(255, 255, 255, 0.25);
+    border: 0.8rem solid rgba(255, 255, 255, 0.25);
     background: rgb(255, 255, 255);
     background-clip: padding-box;
     overflow: scroll;
@@ -268,14 +266,13 @@ main section:nth-child(2n + 1) h2::after {
 
 #event-img {
     display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 35vh;
-    padding: 16px 16px 8px;
+    margin: 0 auto;
+    width: 200px;
+    padding: 1.6rem 1.6rem 0.8rem;
 }
 
 #event-info {
-    padding: 8px 16px 16px;
+    padding: 0.8rem 1.6rem 1.6rem;
 }
 
 #event-date {
@@ -283,6 +280,7 @@ main section:nth-child(2n + 1) h2::after {
     color: #555555;
     font-size: 1rem;
     text-align: center;
+    padding-bottom: 0.4rem;
 }
 
 #event-name {
@@ -290,7 +288,6 @@ main section:nth-child(2n + 1) h2::after {
     color: #bb2229;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-bottom: 4px;
 }
 
 #event-description {
@@ -301,7 +298,7 @@ main section:nth-child(2n + 1) h2::after {
 
 #europe-map .container {
     height: 60vh;
-    margin-top: 16px;
+    margin-top: 1.6rem;
 }
 
 #map {
@@ -312,17 +309,17 @@ main section:nth-child(2n + 1) h2::after {
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: bold;
-    padding-bottom: 4px;
+    padding-bottom: 0.4rem;
 }
 
 #map h5::after {
     content: "";
     display: block;
     width: 45%;
-    height: 2px;
+    height: 0.2rem;
     background: #ee2229;
     position: absolute;
-    bottom: 4px;
+    bottom: 0.4rem;
 }
 
 #contact {
@@ -346,13 +343,13 @@ main section:nth-child(2n + 1) h2::after {
     height: 80px;
     color: white;
     display: flex;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin: auto;
 }
 
 .personal-data {
-    height: 80px;
-    margin-left: 12px;
+    height: 8rem;
+    margin-left: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,18 +357,18 @@ main section:nth-child(2n + 1) h2::after {
 
 .person img {
     content: url('http://via.placeholder.com/80x80');
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
-    border: 4px solid white;
+    border: 0.4rem solid white;
 }
 
 #move-to-top {
-    width: 48px;
-    height: 48px;
-    border: 2px solid #ee2229;
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 0.2rem solid #ee2229;
     position: absolute;
-    bottom: -5%;
+    bottom: -7%;
     left: 50%;
     z-index: 2;
     -webkit-transform: translateX(-50%);
@@ -380,7 +377,7 @@ main section:nth-child(2n + 1) h2::after {
     font-size: 4rem;
     color: #ee2229;
     text-align: center;
-    text-shadow: 0 -12px, 0px -24px;
+    text-shadow: 0 -1.2rem, 0px -2.4rem;
     overflow: hidden;
     background-color: white;
 }
@@ -404,7 +401,6 @@ main footer {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    z-index: 0;
 }
 
 footer p {
@@ -430,9 +426,9 @@ footer p {
 .facebook-icon div {
     color: white;
     background: #ee2229;
-    width: 48px;
-    height: 48px;
-    margin-top: 4px;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-top: 0.4rem;
     font-size: 2.5rem;
     text-align: center;
     border-radius: 50%;
@@ -447,80 +443,168 @@ footer p {
     transform: translate(-50%, -50%);
 }
 
-.facebook-icon div:hover {
-    background-color: #3B5998;
-}
-
 /*ANIMATIONS*/
 
 @-webkit-keyframes arrowDown {
     0% {
-        -webkit-transform: translateY(-48px);
-        transform: translateY(-48px);
+        -webkit-transform: translateY(-4.8rem);
+        transform: translateY(-4.8rem);
     }
     50% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
     100% {
-        -webkit-transform: translateY(48px);
-        transform: translateY(48px);
+        -webkit-transform: translateY(4.8rem);
+        transform: translateY(4.8rem);
     }
 }
 
 @keyframes arrowDown {
     0% {
-        -webkit-transform: translateY(-48px);
-        transform: translateY(-48px);
+        -webkit-transform: translateY(-4.8rem);
+        transform: translateY(-4.8rem);
     }
     50% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
     100% {
-        -webkit-transform: translateY(48px);
-        transform: translateY(48px);
+        -webkit-transform: translateY(4.8rem);
+        transform: translateY(4.8rem);
     }
 }
 
 @-webkit-keyframes arrowUp {
     0% {
-        -webkit-transform: translateY(48px);
-        transform: translateY(48px);
+        -webkit-transform: translateY(4.8rem);
+        transform: translateY(4.8rem);
     }
     50% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
     100% {
-        -webkit-transform: translateY(-48px);
-        transform: translateY(-48px);
+        -webkit-transform: translateY(-4.8rem);
+        transform: translateY(-4.8rem);
     }
 }
 
 @keyframes arrowUp {
     0% {
-        -webkit-transform: translateY(48px);
-        transform: translateY(48px);
+        -webkit-transform: translateY(4.8rem);
+        transform: translateY(4.8rem);
     }
     50% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
     100% {
-        -webkit-transform: translateY(-48px);
-        transform: translateY(-48px);
+        -webkit-transform: translateY(-4.8rem);
+        transform: translateY(-4.8rem);
     }
 }
 
 /*MEDIA QUERIES*/
 
-@media (orientation: landscape) {
-    header img {
-        width: 45%;
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+Small devices (landscape phones, 576px and up)
+*/
+
+@media (min-width: 576px) {
+    html {
+        font-size: 12px;
     }
-    header h1 {
-        margin-top: 4px;
-        font-size: 2.5rem;
+
+    main > section {
+        height: 576px;
+    }
+
+    #welcome {
+        height: 100vh;
+    }
+
+    #welcome img {
+        max-width: 40%;
+    }
+
+    #welcome h1 {
+        font-size: 2.25rem;
+    }
+
+    #slider {
+        height: 280px;
+    }
+
+    #event {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #event-img {
+        width: 40%;
+        margin: auto;
+    }
+
+    #event-info {
+        padding: 1.6rem;
+        margin: auto 0;
+    }
+
+    #europe-map .container {
+        height: 85vh;
+    }
+
+    #contact {
+        height: 400px;
+    }
+
+    #contact > section {
+        margin: 0;
+        margin-top: 1.6rem;
+        height: 200px;
+        flex-flow: row;
+    }
+
+    .person {
+        height: auto;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .personal-data {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .person img {
+        content: url('http://via.placeholder.com/96x96');
+    }
+
+    main footer {
+        height: 140px;
     }
 }
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .facebook-icon div:hover {
+        background-color: #3B5998;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
