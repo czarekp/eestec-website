@@ -443,6 +443,10 @@ footer p {
     transform: translate(-50%, -50%);
 }
 
+.facebook-icon div:hover {
+    background-color: #3B5998;
+}
+
 /*ANIMATIONS*/
 
 @-webkit-keyframes arrowDown {
@@ -594,14 +598,128 @@ Small devices (landscape phones, 576px and up)
 
 /*Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
 
+    main section {
+        height: 100vh;
+    }
+
+    #welcome section img {
+        max-width: 50%;
+    }
+
+    #welcome section h1 {
+        font-size: 2.6rem;
+    }
+
+    #about-us article {
+        margin-top: 2rem;
+        padding: 0 4rem;
+    }
+
+    #about-us article h4 {
+        font-size: 1.8rem;
+    }
+
+    #about-us article p {
+        font-size: 1.5rem;
+    }
+
+    #about-us article img {
+        height: 5rem;
+        margin-top: 1rem;
+    }
+
+    #slider {
+        margin-top: 2rem;
+        height: 60vh;
+    }
+
+    #event {
+        flex-flow: column;
+    }
+
+    #event-info {
+        padding: 2rem;
+    }
+
+    #event-img {
+        width: auto;
+        height: 60%;
+        padding: 2rem;
+    }
+
+    #event-date {
+        font-size: 1.3rem;
+    }
+
+    #event-name {
+        font-size: 2rem;
+    }
+
+    #event-description {
+        font-size: 1.5rem;
+    }
+
+    #europe-map .container {
+        height: 60vh;
+        margin-top: 2rem;
+    }
+
+    #contact {
+        height: 75vh;
+    }
+
+    #contact > section {
+        height: 50vh;
+    }
+
+    #move-to-top {
+        bottom: -5%;
+    }
+
+    main footer {
+        height: 25vh;
+    }
+}
+
+/*iPad (landscape)*/
+
+@media (width: 1024px) and (height: 768px) and (orientation: landscape) {
+    #about-us article img {
+        display: none;
+    }
+
+    #slider {
+        height: 55vh
+    }
+
+    #event {
+        flex-flow: row;
+    }
+
+    #event img {
+        width: 33%;
+        height: auto;
+    }
+
+    #europe-map .container {
+        height: 55vh;
+    }
+
+    #contact > section {
+        height: 40vh;
+    }
+}
 
 /*Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) {
-    .facebook-icon div:hover {
-        background-color: #3B5998;
+    #welcome section img {
+        max-width: 40%;
     }
 }
 
