@@ -518,7 +518,8 @@ Small devices (landscape phones, 576px and up)
 */
 
 @media (min-width: 576px) {
-    html {
+    html,
+    body {
         font-size: 12px;
     }
 
@@ -599,7 +600,8 @@ Small devices (landscape phones, 576px and up)
 /*Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) {
-    html {
+    html,
+    body {
         font-size: 16px;
     }
 
@@ -694,7 +696,7 @@ Small devices (landscape phones, 576px and up)
     }
 
     #slider {
-        height: 55vh
+        height: 55vh;
     }
 
     #event {
@@ -718,8 +720,84 @@ Small devices (landscape phones, 576px and up)
 /*Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+
     #welcome section img {
-        max-width: 40%;
+        max-width: 33%;
+    }
+
+    #about-us article {
+        margin-top: 48px;
+        padding: 0 128px;
+    }
+
+    #about-us article img {
+        height: 80px;
+    }
+
+    #slider {
+        margin-top: 48px;
+        height: 56vh;
+    }
+
+    #prev-btn,
+    #next-btn {
+        width: 8rem;
+        cursor: pointer;
+    }
+
+    .fa-angle-right,
+    .fa-angle-left {
+        width: 8rem;
+    }
+
+    #event {
+        flex-flow: row;
+        overflow: auto;
+    }
+
+    #event img {
+        width: 22rem;
+        height: auto;
+    }
+
+    #event-info {
+        width: 65%;
+        padding: 4rem;
+    }
+
+    #europe-map .container {
+        height: 58vh;
+    }
+
+    .person img {
+        content: url('http://via.placeholder.com/128x128');
+        width: 128px;
+        height: 128px;
+    }
+
+    main section .arrow,
+    #move-to-top {
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    main section .arrow:hover {
+        color: #ee2228;
+        background-color: white;
+        border-color: #ee2228;
+        box-shadow: 0 0 4px 4px white;
+    }
+
+    main section:nth-child(2n) .arrow:hover,
+    #move-to-top:hover {
+        color: white;
+        background-color: #ee2228;
+        border-color: white;
+        box-shadow: 0 0 4px 4px #ee2228;
     }
 }
 
